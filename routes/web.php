@@ -26,6 +26,12 @@
  *
  * Engineers can get elements from the container using:
  * $filesystem = app('Illuminate\Filesystem\Filesystem');
+ *
+ * From Lesson 22:
+ *
+ * The above is done as part of ServiceProvider registration - making those pieces available to the rest of the
+ * application. This is what I already do when registering new plugins in WordPress! Each part of the system provides
+ * some service or set of services that the rest of the system can leverage.
  */
 
 Route::get('/', 'PagesController@home');
