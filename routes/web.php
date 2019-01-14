@@ -11,6 +11,23 @@
 |
 */
 
+/*
+ * Examples from Lesson 21:
+ *
+ * // Add classes as on-demand elements within a service container:
+ * app()->bind('example', function() {
+ *     return new \App\Example();
+ * });
+ *
+ * // Create a singleton instance of a service within the container:
+ * app()->singleton('example', function() {
+ *      return new \App\Example();
+ * });
+ *
+ * Engineers can get elements from the container using:
+ * $filesystem = app('Illuminate\Filesystem\Filesystem');
+ */
+
 Route::get('/', 'PagesController@home');
 Route::get('/about', 'PagesController@about');
 Route::get('/contact', 'PagesController@contact');
